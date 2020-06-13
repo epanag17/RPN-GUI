@@ -1,0 +1,24 @@
+places: {u, v, w, x, y, }
+transitions: {t1, t2, t3, }
+tokens: {
+  a in u,
+  b in w,
+}
+bonds : {
+}
+arcs : {
+  u -> t1 {[a] },
+  t1 -> v {[a] },
+  v -> t3 {[a] },
+  w -> t2 {[b] },
+  x -> t3 {[b] },
+  t2 -> x {[b] },
+  t3 -> y {[(a-b)] },
+  t1 -> v {[a] },
+  u -> t1 {[a] },
+  w -> t2 {[b] },
+  t2 -> x {[b] },
+  x -> t3 {[b] },
+  v -> t3 {[a] },
+  t3 -> y {[(a-b)] },
+}

@@ -1,0 +1,44 @@
+places: {s, t, u, v, x, y, z, }
+transitions: {t4, t5, t6, t1, t2, t3, }
+tokens: {
+  a in s,
+  b in s,
+  c in s,
+  d in s,
+}
+bonds : {
+  c - d,
+  b - a,
+  d - c,
+  a - b,
+}
+arcs : {
+  s -> t4 {[d] },
+  t6 -> s {[(d-c)] },
+  s -> t1 {[a] },
+  t3 -> s {[b] },
+  t -> t1 {[b] },
+  t1 -> u {[(a-b)] },
+  u -> t2 {[b] },
+  t2 -> v {[b] },
+  v -> t3 {[b] },
+  t4 -> x {[d] },
+  x -> t5 {[d] },
+  y -> t6 {[d] },
+  t5 -> y {[d] },
+  z -> t6 {[c] },
+  t4 -> x {[d] },
+  s -> t4 {[d] },
+  t5 -> y {[d] },
+  x -> t5 {[d] },
+  y -> t6 {[d] },
+  t6 -> s {[(d-c)] },
+  z -> t6 {[c] },
+  t -> t1 {[b] },
+  t1 -> u {[(a-b)] },
+  s -> t1 {[a] },
+  t2 -> v {[b] },
+  u -> t2 {[b] },
+  v -> t3 {[b] },
+  t3 -> s {[b] },
+}

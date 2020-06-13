@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root stylesheets="@style.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.19821826280623608" focusTraversable="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" style="-fx-background-color: #8c9eff;" styleClass="actionPane">
+               <children>
+                  <VBox fx:id="fx_editorButtons" layoutX="10.0" layoutY="123.0" prefHeight="476.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="123.0">
+                     <children>
+                        <Button fx:id="selectButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="221.0" text="SELECT">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="MOUSE_POINTER" size="25" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="deleteButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="221.0" text="DELETE">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TRASH" size="25" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="placeButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="221.0" text="PLACE">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CIRCLE_THIN" size="25.0" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="transitionButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="221.0" text="TRANSITION" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="SQUARE" size="25.0" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="tokenButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="221.0" text="TOKEN">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CIRCLE" size="25.0" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="bondButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="221.0" text="BOND">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ELLIPSIS_H" size="30" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="arrowButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="221.0" text="ARROW">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="EXTERNAL_LINK_SQUARE" size="25.0" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <ScrollPane hbarPolicy="ALWAYS" prefHeight="599.0" prefWidth="789.0" vbarPolicy="ALWAYS">
+               <content>
+                  <AnchorPane fx:id="fx_editorScrollArea" prefHeight="1000.0" prefWidth="1000.0" />
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </children>
+</fx:root>

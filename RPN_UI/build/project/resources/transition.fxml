@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root fx:id="root_pane" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="history" layoutX="12.0" layoutY="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="box" layoutX="12.0" layoutY="21.0" styleClass="transition" stylesheets="@style.css" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Label fx:id="transitionLabel" layoutX="7.0" layoutY="7.0" text="label" textAlignment="CENTER" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>
